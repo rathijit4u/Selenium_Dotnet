@@ -12,7 +12,9 @@ namespace SeleniumPoC3
         public void TestMethod1()
         {
             IWebDriver driver = new ChromeDriver(@"C:\Users\svc_surfqacoe\Documents");
-            driver.Navigate().GoToUrl("https://surfstage.service-now.com");
+            driver.Navigate().GoToUrl("https://www.servicenow.com/");
+            System.Console.WriteLine("Hellow world");
+            System.Console.WriteLine(driver.PageSource);
             driver.Quit();
         }
     }
