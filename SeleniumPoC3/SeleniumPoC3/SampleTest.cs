@@ -14,7 +14,7 @@ namespace SeleniumPoC3
         {
             TextWriterTraceListener myListener = new TextWriterTraceListener("TextWriterOutput.log", "myListener");
 
-            IWebDriver driver = new ChromeDriver(@"C:\chromedriver\chromedriver.exe");
+            IWebDriver driver = new ChromeDriver(@"C:\chromedriver");
             driver.Navigate().GoToUrl("https://www.servicenow.com/");
             myListener.WriteLine(driver.PageSource); 
             myListener.Flush();
